@@ -1,2 +1,2 @@
 # IvanaGoSt.github.io
-Wllcome to IvanaGoSt's Homepage
+Welcome to IvanaGoSt's Homepage
