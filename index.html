@@ -2,13 +2,40 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Under Construction</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
-    <!--<link href="https://fonts.googleapis.com/css?family=Bitter|Indie+Flower" rel="stylesheet">-->
+    <link href="https://fonts.googleapis.com/css?family=Sanchez" rel="stylesheet">
   </head>
   <body>
-    <h1>Website is under construction.</h1>
-    <p>We'll be back soon.</p>
+    <nav id="navbar">
+      <a href="#welcome-section" class="srp">Dobrodošli</a>
+      <a href="#projects" class="srp">Radovi</a>
+      <a href="#contact" class="srp">Kontakt</a>
+      <a href="#welcome-section" class="eng">Welcome</a>
+      <a href="#projects" class="eng">Projects</a>
+      <a href="#contact" class="eng">Contact</a>
+   </nav>
+   <div id="lang"><a id="srp">srp</a> <a id="eng">eng</a></div>
+    <div id="container">
+      <div id="underConstruction">
+        <h1>Website is under construction.</h1>
+        <p>I'll be back soon.</p>
+      <div>
+        <p>If you want to send me a message anyway, please do so.
+        <form class="gform" method="POST" data-email="ivanagost@gmail.com" action="https://script.google.com/macros/s/AKfycbxS59o_4A7Qf8BsdLWZj0UAH5VMEPSsESCTIdoESlf38iNrNPzA/exec">
+          <input type="text" name="name" placeholder="Your name, please..." class="input" required></br>
+          <input type="email" name="_replyto" placeholder="Your e-mail" class="input" required></br>
+          <textarea id="subject" name="subject" placeholder="Message text..." rows="6" column="20" class="input" required></textarea> </br>
+          <input type="submit" value="Send" class="submit">
+          <div style="display:none" class="thankyou_message">
+          <h4><em>Thanks</em> for contacting me! I will get back to you soon!</h4>
+         </div>
+       </form>
+
+
+    <div>
     <script src="scripts/main.js"></script>
-      </body>
+    <script data-cfasync="false" type="text/javascript" src="scripts/form-submission-handler.js"></script>
+  </body>
 </html>
