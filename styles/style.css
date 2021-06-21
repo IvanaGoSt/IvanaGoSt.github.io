@@ -14,7 +14,7 @@ body {
   top: 0;
   text-align: right;
   background-color: #18334e;
-  height: 5vh;
+  height: 4vh;
   padding: 1%;
 }
 
@@ -30,47 +30,132 @@ body {
   color: #39e600;
 }
 
-#lang {
-  text-align: right;
+button {
+  position: sticky;
+  top: 9vh;
 }
 
-#lang a {
-  cursor: pointer;
-  padding: 0.5%;
-  margin: auto;
+#lang{
+  float: right;
+  border-radius: 5px;
 }
 
-#lang a:hover {
+#lang:hover {
   color: #18334e;
   background-color: #39e600;
 }
 
-#underConstruction {
+section {
   /*display: none;*/
+  height: 100vh;
+  padding-top: 25vh;
+  text-align: center;
+  margin: auto;
 }
 
-/*.srp {
-  display: none;
-}*/
+#projects, #contact {
+  height: 100%;
+}
+
+#contact {
+  margin-bottom: 5vh;
+}
+
+h3 {
+  color: #39e600;
+}
+
+details {
+  border: 1px solid #39e600;
+  border-radius: 5px;
+  text-align: left;
+  padding: 16px;
+  margin: 5px;
+}
+
+summary:hover {
+  cursor: pointer;
+}
+
+.link-to {
+  float: right;
+  text-decoration: none;
+  color: #c2c9d3;
+  font-size: 32px;
+}
+
+.link-to:hover {
+  color: #b3ff99;
+}
+
+.code {
+  text-align: right;
+}
+
+.code a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#box2 {
+  padding-top: 10vh;
+  padding-bottom: 5vh;
+  display: grid;
+  grid-template-columns: repeat(5, auto);
+  justify-items: center;
+}
+
+@media (max-width: 600px) {
+  #box2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+#box2 a {
+  color: #39e600;
+  text-decoration: none;
+}
+
+#box2 a:hover {
+  color: #d9e6f2;
+}
 
 .eng {
   display: none;
+}
+
+#contact h3 {
+  color: #c2c9d3;
 }
 
 form {
   display: flex;
   flex-direction: column;
   max-width: 500px;
+  margin: auto;
+}
+
+input, textarea {
+  border: 2px solid #18334e;
+  border-radius: 5px;
+  padding: 2%;
 }
 
 .submit {
-  border: 1px solid #18334e;
+  border: 2px solid #18334e;
   border-radius: 5px;
   height: 40px;
+  background-color: #b3ff99;
 }
 
 .submit:hover {
   background-color: #18334e;
   color: white;
-  border: 1px solid #39e600;
+  border: 2px solid #39e600;
+}
+
+footer {
+  color: #39e600;
+  background-color: #18334e;
+  font-size: 12px;
 }
