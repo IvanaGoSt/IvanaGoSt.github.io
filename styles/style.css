@@ -13,16 +13,16 @@ body {
   position: sticky;
   top: 0;
   text-align: right;
-  background-color: #18334e;
-  height: 4vh;
-  padding: 1%;
+  background-color: #18334e;  
+  height: auto;
+  padding: 1vh;
 }
 
 #navbar a {
   color: #c2c9d3;
   text-decoration: none;
-  padding: 1%;
-  margin: auto;
+  padding: 0.2vh;
+  margin: 0.5vh;
 }
 
 #navbar a:hover {
@@ -38,6 +38,8 @@ button {
 #lang{
   float: right;
   border-radius: 5px;
+  color: #18334e;
+  background-color: #c2c9d3;
 }
 
 #lang:hover {
